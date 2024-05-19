@@ -1,10 +1,25 @@
-body {
-    font-size: 18px;
+@font-face {
+    font-family: Poppins;
+    src: url(https://fonts.google.com/specimen/Poppins);
+}
+@font-face {
+    font-family: OpenSans;
+    src: url(https://fonts.google.com/specimen/Open+Sans);
 }
 
+body {
+    font-size: 18px;
+    font-family: OpenSans;
+    font-weight: 400;
+}
+h1,h2{
+    font-family: Poppins;
+    font-weight: 600;
+}
 header,
 main {
     background-color: hsl(193, 100%, 96%);
+    background-image:url(./images/bg-hero-desktop.svg);
 }
 
 .initial {
@@ -77,14 +92,50 @@ main {
     margin: 20px;
     border-radius: 15px;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    margin-right: 75px;
+    margin-left: 75px;
 }
 
 #illustration-grow-together {
     width: 450px;
+    margin: 20px;
+    padding: 40px;
 }
 .initial2_flex_1 {
     display: block;
     text-align: left;
-    margin: 50px 100px;
-    padding: 100px;
+    margin: 75px 100px;
+    padding: 75px 20px;
+}
+.initial3 {
+    text-align: center;
+}
+.initial4{
+    background: hsl(192, 100%, 9%);
+    color: hsl(193, 100%, 96%);
+}
+.initial4_flex {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: space-evenly;
+}
+.initial4_flex_ul_list {
+    list-style-type: none;
+    width: 250px;
+}
+.initial4_flex_ul > li {
+    padding: 10px;
+}
+#socialicon {
+    width: 25px;
+}
+.initial4_flex_ul_social {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 6px;
+}
+#para {
+    text-align: right;
 }
